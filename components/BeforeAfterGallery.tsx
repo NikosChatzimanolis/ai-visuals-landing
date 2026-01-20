@@ -42,7 +42,7 @@ export default function BeforeAfterGallery({ pairs }: Props) {
                     <span className="text-[11px] font-semibold text-slate-700">Before</span>
                     <span className="text-[11px] text-slate-500">Original</span>
                   </div>
-                  <div className="relative aspect-[4/3]">
+                  <div className="relative aspect-[3/3]">
                     <Image
                       src={pair.beforeSrc}
                       alt={pair.beforeAlt}
@@ -66,7 +66,7 @@ export default function BeforeAfterGallery({ pairs }: Props) {
                     <span className="text-[11px] font-semibold text-slate-700">After</span>
                     <span className="text-[11px] text-violet-700">Marketing-ready</span>
                   </div>
-                  <div className="relative aspect-[4/3]">
+                  <div className="relative aspect-[3/3]">
                     <Image
                       src={pair.afterSrc}
                       alt={pair.afterAlt}

@@ -1,5 +1,5 @@
 // src/components/sections/PricingSection.tsx
-import type { PricingPlan } from "@/types/landig";
+import type { PricingPlan } from "../../types/landig";
 
 export default function PricingSection({ plans }: { plans: PricingPlan[] }) {
   return (
