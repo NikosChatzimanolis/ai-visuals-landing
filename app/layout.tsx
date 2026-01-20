@@ -1,38 +1,56 @@
-// src/app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://example.com"),
   title: {
-    default: "Visuals for Cyprus | Done-for-you food photos & short videos",
-    template: "%s | Visuals for Cyprus",
+    default: "Day One",
+    template: "%s · Day One",
   },
   description:
-    "Done-for-you images and short videos for restaurants and small businesses in Cyprus. No photoshoot. You send a brief, we deliver ready-to-post visuals.",
-  robots: {
-    index: true,
-    follow: true,
-  },
+    "Done-for-you product photos and short videos for local businesses. See how your product could look — before you commit.",
+
+  metadataBase: new URL("https://ai-visuals-landing-jare.vercel.app/"),
+
   openGraph: {
-    type: "website",
-    title: "Visuals for Cyprus",
+    title: "Day One",
     description:
-      "Professional food photos and short videos—without a photoshoot. Done-for-you visuals for Cyprus businesses.",
-    locale: "en_US",
+      "Professional visuals for restaurants, liquor stores, boutiques, and small businesses.",
+    url: "https://ai-visuals-landing-jare.vercel.app/",
+    siteName: "Day One",
+    images: [
+      {
+        url: "/icon.png",
+        width: 1200,
+        height: 630,
+        alt: "Day One — visual content for local businesses",
+      },
+    ],
+    type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Visuals for Cyprus",
+    title: "Day One",
     description:
-      "Done-for-you visuals for restaurants & small businesses in Cyprus. Fast delivery. Ready-to-post.",
+      "Get a visual idea for your business. Done-for-you product photos and short videos.",
+    images: ["/icon.png"],
+  },
+
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en" className="h-full scroll-smooth">
-      <body className="min-h-full bg-white text-slate-900 antialiased">
+    <html lang="en">
+      <body className="bg-white text-slate-900 antialiased">
         {children}
       </body>
     </html>
