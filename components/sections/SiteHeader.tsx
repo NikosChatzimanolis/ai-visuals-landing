@@ -9,9 +9,9 @@ export default function SiteHeader({ nav }: { nav: NavItem[] }) {
           href="#"
           className="inline-flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-600 focus-visible:ring-offset-4"
         >
-          <span className="inline-flex size-9 items-center justify-center rounded-xl bg-slate-900 text-white">
+          <span className="inline-flex size-9 items-center justify-center rounded-xl bg-violet-500 text-white">
             <span aria-hidden className="text-sm font-semibold">
-              V
+              D
             </span>
           </span>
           <span className="text-sm font-semibold tracking-tight sm:text-base">
