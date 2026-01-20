@@ -186,7 +186,7 @@ export async function POST(req: NextRequest) {
             {
               filename: attachment.filename,
               content: attachment.content.toString("base64"),
-              content_type: attachment.contentType,
+              contentType: attachment.contentType,
             },
           ]
         : [],
